@@ -1,0 +1,101 @@
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loader-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(16, 16, 16);
+  width: 100%;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: 100000;
+}
+.loader-wrapper h1 {
+  margin-bottom: 2em;
+  color: white;
+}
+
+.change {
+  opacity: 0;
+  transition-delay: 2s;
+  z-index: -1000;
+}
+
+body {
+  height: 200vh;
+}
+
+.abuelo {
+  margin: 5em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.abuelo .padre {
+  padding: 2em 1em;
+  background-color: white;
+  box-shadow: 3.7px 2.5px 5.3px rgba(0, 0, 0, 0.028), 12.5px 8.3px 17.9px rgba(0, 0, 0, 0.042), 56px 37px 80px rgba(0, 0, 0, 0.07);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.abuelo .padre .padre--price {
+  color: rgb(4, 4, 4);
+  font-weight: bold;
+  text-align: left;
+  font-size: 1.3em;
+}
+.abuelo .padre .hijo {
+  background-color: rgba(16, 16, 16, 0.301);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.abuelo .padre .hijo .modelo {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  transform: scale(1.25);
+}
+.abuelo .padre .hijo .material-symbols-outlined {
+  box-shadow: 1.3px 3.1px 5.3px rgba(0, 0, 0, 0.061), 4.5px 10.5px 17.9px rgba(0, 0, 0, 0.092), 20px 47px 80px rgba(0, 0, 0, 0.13);
+  border: 1px solid grey;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  padding: 0.1em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.abuelo .padre .padre--titulo {
+  margin-top: 0.5em;
+}
+.abuelo .padre .padre--boton {
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  border-style: none;
+}
+.abuelo .padre:hover {
+  box-shadow: 1.3px 3.1px 5.3px rgba(0, 0, 0, 0.061), 4.5px 10.5px 17.9px rgba(0, 0, 0, 0.092), 20px 47px 80px rgba(0, 0, 0, 0.13);
+}
+
+.color {
+  border: 3px solid red;
+}/*# sourceMappingURL=style.css.map */
